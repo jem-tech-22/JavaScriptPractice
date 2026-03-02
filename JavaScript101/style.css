@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+    height: 100vh; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sample {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 0px;
+}
+
+.sample:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
