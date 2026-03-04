@@ -204,3 +204,47 @@ form.addEventListener("submit", function(event) {
         message.style.color = "red";
     }
 });
+
+// let person = {
+//     personUsername: "jempotchie",
+//     personPassword: 1234,
+//     mainHeroes: {
+//         hero1: {
+//             heroName: "Ling",
+//             heroType: "Assasin"
+//         },
+//         hero2: {
+//             heroName: "Layla",
+//             heroType: "Marksman"
+//         }
+//     }
+// };
+
+// console.log(person.mainHeroes.hero1.heroName);
+// console.log(person.mainHeroes["hero2"].heroType);
+
+// person.personUsername = "potpot";
+// person.personEmail = "pot@gmail.com";
+// console.log(person);
+
+let people = [
+    {
+        firstname: "Charles James",
+        lastname: "Salac",
+        age: 20
+    },
+    {
+        firstname: "Juan",
+        lastname: "dela Cruz",
+        age: 28  
+    },
+    {
+        firstname: "Pedro",
+        lastname: "Penduko",
+        age: 18
+    }
+];
+
+let strPeople = JSON.stringify(people);
+
+console.log(people);
