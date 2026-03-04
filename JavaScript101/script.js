@@ -7,7 +7,7 @@
 // const sum = math + english + mapeh + science + esp;
 // const average = sum / 5;
 
-// console.log("Average: " + average);
+// console.log("Average: " + average); asdas
 
 // let firstName = "Charles";
 // let firstNameLength = firstName.length;
@@ -163,21 +163,44 @@
 
 // console.log(reverse);
 
-let names = ["Charles", "James", "Potchie", "Jem", "Tensionado"];
-let nameSearch = "JsEm";
+// let names = ["Charles", "James", "Potchie", "Jem", "Tensionado"];
+// let nameSearch = "JsEm";
 
-let isNameExist = false;
+// let isNameExist = false;
 
-for(let i = 0; i <= names.length -1; i++) {
-    if(nameSearch.toLowerCase() === names[i].toLowerCase()) {
-        isNameExist = true;
-        console.log(`Found ${names[i]}`);
-        break;
-    } 
-}
+// for(let i = 0; i <= names.length -1; i++) {
+//     if(nameSearch.toLowerCase() === names[i].toLowerCase()) {
+//         isNameExist = true;
+//         console.log(`Found ${names[i]}`);
+//         break;
+//     } 
+// }
 
-if (isNameExist === false) {
-    console.log(`${nameSearch} not exist`)
-}
+// if (isNameExist === false) {
+//     console.log(`${nameSearch} not exist`)
+// }
 
-console.log("Hello World");
+// console.log("Hello World");
+
+
+const givenUsername = "jem123";
+const givenPassword = "123"; //asdadsadasdasd 
+
+const form = document.getElementById("inputField");
+const message = document.getElementById("message");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    if(usernameInput === givenUsername && passwordInput === givenPassword){
+        message.textContent = "Log in success!";
+        message.style.color = "green";
+        window.location.href = "dashboard.html";
+    } else {
+        message.textContent = "Log in failed!";
+        message.style.color = "red";
+    }
+});

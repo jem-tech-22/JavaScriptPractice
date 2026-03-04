@@ -1,13 +1,14 @@
 body {
     background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center;     /* vertical */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
     height: 100vh; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sample {
+/* .sample {
     background-color: green;
     color: white;
     border-radius: 10px;
@@ -18,4 +19,35 @@ body {
 .sample:hover {
     cursor: pointer;
     opacity: 70%;
+} */
+
+.input-field {
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px 30px 0px 30px;
+    padding: 10px;
+}
+
+/* @media (max-width: 550px) {
+    .input-field {
+        flex-direction: column;
+    }
+} */
+
+.input-field input {
+    flex: 1;
+    /* min-width: 150px;
+    max-width: 400px; */
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(110, 109, 109);
 }
