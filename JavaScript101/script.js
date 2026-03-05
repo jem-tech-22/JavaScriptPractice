@@ -227,24 +227,53 @@ form.addEventListener("submit", function(event) {
 // person.personEmail = "pot@gmail.com";
 // console.log(person);
 
-let people = [
-    {
-        firstname: "Charles James",
-        lastname: "Salac",
-        age: 20
-    },
-    {
-        firstname: "Juan",
-        lastname: "dela Cruz",
-        age: 28  
-    },
-    {
-        firstname: "Pedro",
-        lastname: "Penduko",
-        age: 18
-    }
-];
+// let people = [
+//     {
+//         firstname: "Charles James",
+//         lastname: "Salac",
+//         age: 20
+//     },
+//     {
+//         firstname: "Juan",
+//         lastname: "dela Cruz",
+//         age: 28  
+//     },
+//     {
+//         firstname: "Pedro",
+//         lastname: "Penduko",
+//         age: 18
+//     }
+// ];  
 
-let strPeople = JSON.stringify(people);
+// let user1 = {
+//     firstName: "Jem",
+//     lastName: "Potchie",
+//     age: 20
+// }
 
-console.log(people);
+// let keys = Object.keys(people);
+
+// for(let i = 0; i < keys.length; i++) {
+//     console.log(people[keys[i]]);
+// }
+
+let grades = {
+    Math: 90,
+    English: 94,
+    Filipino: 92,
+    Mapeh: 89,
+    CSS: 87
+};
+
+let average = 0;
+
+let keys = Object.keys(grades);
+
+for(let k in keys) {
+    console.log(`${keys[k]}: ${grades[keys[k]]}`);
+    average += grades[keys[k]];
+}
+
+average /= Object.keys(grades).length;
+console.log(`Average Grade: ${average}`);
+
