@@ -257,23 +257,65 @@ form.addEventListener("submit", function(event) {
 //     console.log(people[keys[i]]);
 // }
 
-let grades = {
-    Math: 90,
-    English: 94,
-    Filipino: 92,
-    Mapeh: 89,
-    CSS: 87
-};
+// let grades = {
+//     Math: 90,
+//     English: 94,
+//     Filipino: 92,
+//     Mapeh: 89,
+//     CSS: 87,
+//     Science: 90
+// };
 
-let average = 0;
+// let average = 0;
 
-let keys = Object.keys(grades);
+// let keys = Object.keys(grades);
 
-for(let k in keys) {
-    console.log(`${keys[k]}: ${grades[keys[k]]}`);
-    average += grades[keys[k]];
+// for(let k in keys) {
+//     console.log(`${keys[k]}: ${grades[keys[k]]}`);
+//     average += grades[keys[k]];
+// }
+
+// average /= Object.keys(grades).length;
+// console.log(`Average Grade: ${average}`);
+
+
+// function sayHello() {
+//     console.log("Hello there!");
+// }
+
+// sayHello();
+
+// function addition(num1, num2) {
+//     sum = num1 + num2;
+//     console.log(sum);
+// };
+
+// function subtract(num1, num2) {
+//     sub = num1 - num2;
+//     console.log(sub);
+// };
+
+// function multiplication(num1, num2) {
+//     mul = num1 * num2;
+//     console.log(mul);
+// };
+
+// function division(num1, num2) {
+//     div = num1 / num2;
+//     console.log(div);
+// };
+
+// addition(12, 2);
+
+function summations(arrNum) {
+    let sum = 0;
+    for(let i = 0; i < arrNum.length; i++){
+        sum += arrNum[i];
+    }
+    return sum;
 }
 
-average /= Object.keys(grades).length;
-console.log(`Average Grade: ${average}`);
+let total = summations([5,4,3,2,1]);
+console.log(`Summation: ${total}`);
+
 
